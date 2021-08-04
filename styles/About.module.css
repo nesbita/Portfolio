@@ -1,0 +1,27 @@
+.aboutHeader {
+    display: block;
+    justify-content: center;
+    text-align: center;
+   
+}
+.listContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.languages {
+    list-style: none;
+}
+
+.databases {
+    list-style: none;
+}
+
+.librariesFrameworks {
+    list-style: none;
+}
+
+.other {
+    list-style: none;
+}
