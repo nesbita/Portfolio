@@ -1,0 +1,17 @@
+.projectContainer {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.natureWalk:hover {
+    opacity: 0.7;
+}
+
+.marketMatch:hover {
+    opacity: 0.7;
+}
+
+.falendar:hover {
+    opacity: 0.7;
+}
