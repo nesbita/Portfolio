@@ -10,8 +10,10 @@ import EmailIcon from '@material-ui/icons/Email'
 import DescriptionIcon from '@material-ui/icons/Description'
 import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown'
 import React from 'react'
+import Card from 'react-bootstrap/Card'
+import CardDeck from 'react-bootstrap/CardDeck'
+// import {Container, Row, Col} from 'react-bootstrap'
 import about from './About'
-import home from './Home'
 import project from './Project'
 import Navbar from "./Navbar"
 import Section from "./Section"
@@ -22,6 +24,7 @@ import f from '../public/f.jpeg'
 export default function Home () {
     return (
       <div>
+        <div>
         <div className={styles.container}>
       <Head>
         <title>Ariana Nesbit</title>
@@ -130,9 +133,67 @@ export default function Home () {
           dark={true}
           id="Project"
         />
-        <div id='Projects'>
-        <div className={styles.projectContainer}>
-            <div className={styles.natureWalk}>
+        {/* <div id='Projects'>
+        <div className={styles.projectContainer}> */}
+        <div className={styles.cards}>
+  <CardDeck>
+    <div className={styles.cardOne}>
+  <Card>
+    <Card.Img variant='top' src='nw.jpg' width='100px' height='200px'/>
+    <Card.Body>
+      {/* <Card.Title>Nature Walk</Card.Title> */}
+      <Card.Text>
+        A scenario-based game that monitors players' health based on their choices
+        <br/>
+        <br/>
+      </Card.Text>
+    </Card.Body>
+    <Card.Footer>
+    <Card.Link href='/One'>Nature Walk</Card.Link>
+      <small className='text-muted'> | HTML, CSS, JavaScript</small>
+    </Card.Footer>
+  </Card>
+  </div>
+  </CardDeck>
+
+  <CardDeck>
+    <div className={styles.cardTwo}>
+  <Card>
+    <Card.Img variant='top' src='mm.jpeg' width='100px' height='200px'/>
+    <Card.Body>
+      <Card.Text>
+        A full stack app that allows users to locate their closest farmers market using the USDA National Farmers Market Directory API
+      </Card.Text>
+    </Card.Body>
+    <Card.Footer>
+    <Card.Link href='/One'>Market Match</Card.Link>
+      <small className='text-muted'> | Express, Node.js, Sequelize, EJS</small>
+    </Card.Footer>
+  </Card>
+  </div>
+  </CardDeck>
+
+  <CardDeck>
+    <div className={styles.cardThree}>
+  <Card>
+    <Card.Img variant='top' src='f.jpeg' width='100px' height='200px'/>
+    <Card.Body>
+      <Card.Text>
+      A MERN stack application built to allow families to better coordinate their schedules via calendar
+      <br />
+      <br />
+      </Card.Text>
+    </Card.Body>
+    <Card.Footer>
+    <Card.Link href='/One'>Falendar</Card.Link>
+      <small className='text-muted'> | Express, MongoDB, Mongoose, React, CSS</small>
+    </Card.Footer>
+  </Card>
+  </div>
+  </CardDeck>
+  </div>
+{/* </div> */}
+            {/* <div className={styles.natureWalk}>
                 <h2>Nature Walk</h2>
                 <Image src={nw} className={styles.nw} width='400px' height='200px' alt='Trees during Fall'/>
             </div>
@@ -147,7 +208,7 @@ export default function Home () {
                 <Image src={f} className={styles.f} width='400px' height='200px' alt='Calendar'/>
             </div>
             </div>
-        </div>
+        </div> */}
      
 {/*   
 <div className={styles.container}>
@@ -187,8 +248,17 @@ export default function Home () {
         <a href= '/about' /> 
         </div> */}
       {/* </div>  */}
+      
       </div>
-      </main>
+   
+    </main>
+    </div>
+    </div>
+    </div>
+    
+
+      
+
 
 <div>
       <footer className={styles.footer}>
@@ -223,14 +293,17 @@ export default function Home () {
           </span> */}
         {/* </a> */}
       </footer>
-
+</div>
     </div>
     
+    
+    
+
 
       
 
-</div>
-      </div>
-      </div>
+
+      
+      
 )
 }

@@ -98,6 +98,26 @@
   width: 24px;
 }
 
+.cards {
+  display: flex;
+  color: black;
+}
+
+.cardOne {
+  height: 100px;
+  width: 400px;
+}
+
+.cardTwo {
+  height: 100px;
+  width: 400px;
+}
+
+.cardThree {
+  height: 100px;
+  width: 400px;
+}
+
 /* .footer a {
   display: flex;
   justify-content: center;
