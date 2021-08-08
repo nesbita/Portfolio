@@ -4,13 +4,12 @@ import styles from '../styles/Home.module.css'
 export default function Navbar () {
     return (
       <nav className={styles.nav} id='navbar'>
-        <div className={styles.nav-content}>
-          <p>section link here</p>
-          <ul className={styles.nav-items}>
-            <li className={styles.nav-item}>
+        <div className={styles.navContent}>
+          <ul className={styles.navItems}>
+            <li className={styles.navItem}>
             <Link
                 activeClass='active'
-                to='/'
+                to='Home'
                 spy={true}
                 smooth={true}
                 offset={-70}
@@ -21,7 +20,7 @@ export default function Navbar () {
             <li className='nav-item'>
             <Link
                 activeClass='active'
-                to='/about'
+                to='About'
                 spy={true}
                 smooth={true}
                 offset={-70}
@@ -32,26 +31,13 @@ export default function Navbar () {
             <li className='nav-item'>
             <Link
                 activeClass='active'
-                to='/project'
+                to='Project'
                 spy={true}
                 smooth={true}
                 offset={-70}
                 duration={500}>
-              Section 3
+              My Projects
             </Link></li>
-
-            <li className='nav-item'>
-            <Link
-                activeClass='active'
-                to='section4'
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}>
-              Section 4
-            </Link></li>
-
-            <li className="nav-item">Section 5</li>
           </ul>
         </div>
       </nav>

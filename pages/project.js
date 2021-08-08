@@ -12,6 +12,12 @@ import { Public } from '@material-ui/icons'
 export default function Project () {
     return(
         <div>
+           <Section
+          title='My Projects'
+          subtitle={project}
+          dark={true}
+          id="Project"
+        />
             <div className={styles.projectContainer}>
             <div className={styles.natureWalk}>
                 <h2>Nature Walk</h2>

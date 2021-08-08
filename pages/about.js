@@ -6,7 +6,7 @@ import DescriptionIcon from '@material-ui/icons/Description';
 
 export default function About () { 
     return(
-        <div className={styles.aboutContainer}>
+        <div className={styles.aboutContainer} id='About'>
             <main className={styles.aboutMain}>
         <div className={styles.aboutHeader}>
             <h2>I'm a full stack engineer who wants to make a difference in the world</h2>
