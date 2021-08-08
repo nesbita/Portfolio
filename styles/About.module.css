@@ -1,25 +1,46 @@
+/* * {
+    scroll-behavior: smooth;
+} */
+
 .aboutHeader {
     display: block;
     justify-content: center;
     text-align: center;
 }
 
-.about {
+.aboutContainer {
     background-image: url('../public/more_trees.jpg'); 
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     height: 700px;
     border: 2px solid #f73378;
     color: white;
     
 }
-.listContainer {
+
+.aboutMain {
+    align-items: center;
+    background-color: #005252; 
+    border-left: 2px solid #f73378;
+    border-right: 2px solid #f73378;
+    color: white;
+    display: flex;
+    flex: 1; 
+    flex-direction: column;
+    justify-content: center; 
+    padding: 5rem 0;  
+}
+/* .listContainer {
     background-color: #005252;
     display: flex;
     justify-content: space-around;
     align-items: center;
-}
+} */
 
 .languages {
     list-style: none;

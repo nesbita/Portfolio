@@ -6,7 +6,8 @@ import DescriptionIcon from '@material-ui/icons/Description';
 
 export default function About () { 
     return(
-        <div className={styles.about}>
+        <div className={styles.aboutContainer}>
+            <main className={styles.aboutMain}>
         <div className={styles.aboutHeader}>
             <h2>I'm a full stack engineer who wants to make a difference in the world</h2>
             <h3>through thoughtful code and design.  I enjoy coding and working to be a better me each day. <br />  
@@ -69,6 +70,7 @@ export default function About () {
                 </ul>
             {/* </div> */}
         </div>
+        </main>
         <footer className={styles.footer}>
         {/* <a
           href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
@@ -101,7 +103,6 @@ export default function About () {
           </span> */}
         {/* </a> */}
       </footer>
-        </div>
-        
+        </div> 
     )
 }

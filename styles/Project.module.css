@@ -1,17 +1,48 @@
 .projectContainer {
-    display: flex;
+    background-color: #005252;
+    color: #ffd700;
+    display: block;
     justify-content: space-around;
     text-align: center;
+    border: 2px solid #f73378;
+}
+
+.nw {
+    border-radius: 25px;
+    border: 2px solid black !important;
 }
 
 .natureWalk:hover {
     opacity: 0.7;
 }
 
+.mm {
+    border-radius: 25px;
+    border: 2px solid black !important;
+}
+
 .marketMatch:hover {
     opacity: 0.7;
+}
+
+.f {
+    border-radius: 25px;
+    border: 2px solid black !important;
 }
 
 .falendar:hover {
     opacity: 0.7;
 }
+
+.footer {
+    background-color: #ffd700;
+    width: 100%;
+    height: 100px;
+    border-bottom: 2px solid #f73378;
+    border-top: 2px solid #f73378;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    padding-top: 15px; 
+  }
