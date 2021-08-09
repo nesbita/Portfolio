@@ -13,6 +13,7 @@
   background-color: #005252;
   border-left: 2px solid #f73378;
   border-right: 2px solid #f73378;
+  border-top: 2px solid #f73378;
   padding-top: 15px;
   z-index: 1;
 }
@@ -137,14 +138,26 @@
   width: 400px;
 }
 
+.cardOne:hover {
+  opacity: 0.7;
+}
+
 .cardTwo {
   height: 100px;
   width: 400px;
 }
 
+.cardTwo:hover {
+  opacity: 0.7;
+}
+
 .cardThree {
   height: 100px;
   width: 400px;
+}
+
+.cardThree:hover {
+  opacity: 0.7;
 }
 
 /* .footer a {
