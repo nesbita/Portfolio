@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import profilePic from '../public/me.jpg'
+import Link from 'next/link'
+import profilePic from '../public/profile.jpg'
 import styles from '../styles/Home.module.css'
 import GitHubIcon from '@material-ui/icons/GitHub'
 import LinkedInIcon from '@material-ui/icons/LinkedIn'
@@ -41,13 +42,14 @@ export default function Home () {
 
           <main className={styles.main}>
             <h1>Hello</h1>
+            <br />
             <h2>I'm Ariana Nesbit</h2>
+            <br />
+            <br />
+            <br />
          
-            <Image className={styles.profilePic} src={profilePic} alt='Ariana'/>
+            <Image className={styles.profilePic} src={profilePic} alt='Ariana' width={200} height={300} />
               <br />
-              <br />
-        
-            <KeyboardArrowDownIcon />       
               <br />
               <br />
 
@@ -70,7 +72,7 @@ export default function Home () {
             <br />
             <br />
 
-          <div className ={styles.listContainer}>
+          <div className={styles.listContainer}>
             <ul className={styles.languages}>
               <p><strong>Languages</strong></p>
                 <li>HTML</li>
@@ -82,6 +84,7 @@ export default function Home () {
                 <br />
                 <br />
             </ul>
+                
       
             <ul className={styles.databases}>
               <p><strong>Databases</strong></p>
@@ -143,14 +146,18 @@ export default function Home () {
                   <Card.Img variant='top' src='nw.jpg' width='100px' height='200px'/>
                     <Card.Body>
                       <Card.Text>
-                        A scenario-based game that monitors players' health based on their choices
+                        <Link href='https://nesbita.github.io/Nature-Walk/'>
+                        <a target="_blank">Nature Walk</a>
+                        </Link>
+                        <br />
+                          A scenario-based game that monitors players' health based on their choices
                         <br/>
-                        <br/>
+                        
                       </Card.Text>
                     </Card.Body>
                         <Card.Footer>
-                          <Card.Link href='https://nesbita.github.io/Nature-Walk/'>Nature Walk</Card.Link>
-                            <small className='text-muted'> | HTML, CSS, JavaScript</small>
+                          {/* <Card.Link href='https://nesbita.github.io/Nature-Walk/'><a target="_blank">Nature Walk</a></Card.Link> */}
+                            <small className='text-muted'>HTML, CSS, JavaScript</small>
                         </Card.Footer>
                 </Card>
               </div>
@@ -162,12 +169,15 @@ export default function Home () {
                   <Card.Img variant='top' src='mm.jpeg' width='100px' height='200px'/>
                     <Card.Body>
                       <Card.Text>
-                        A full stack app that allows users to locate their closest farmers market using the USDA National Farmers Market Directory API
+                      <Link href='https://market-match.herokuapp.com/'>
+                        <a target="_blank">Market Match</a>  
+                        </Link>
+                        <br />
+                        App that helps users find farmers markets using the USDA National Farmers Market Directory API
                       </Card.Text>
                     </Card.Body>
                       <Card.Footer>
-                        <Card.Link href='https://market-match.herokuapp.com/'>Market Match</Card.Link>
-                          <small className='text-muted'> | Express, Node.js, Sequelize, EJS</small>
+                          <small className='text-muted'>Express, Node.js, Sequelize, EJS</small>
                       </Card.Footer>
                   </Card>
               </div>
@@ -179,14 +189,16 @@ export default function Home () {
                   <Card.Img variant='top' src='f.jpeg' width='100px' height='200px'/>
                     <Card.Body>
                       <Card.Text>
-                        A MERN stack application built to allow families to better coordinate their schedules via calendar
+                      <Link href='https://60f1ef3a5668050007a6b11d--condescending-lamarr-3bcb2c.netlify.app/'>
+                        <a target="_blank">Falendar</a>  
+                        </Link>
                         <br />
+                        A MERN stack application built to allow families to better coordinate their schedules via calendar
                         <br />
                       </Card.Text>
                     </Card.Body>
                       <Card.Footer>
-                        <Card.Link href='https://60f1ef3a5668050007a6b11d--condescending-lamarr-3bcb2c.netlify.app/'>Falendar</Card.Link>
-                          <small className='text-muted'> | Express, MongoDB, Mongoose, React, CSS</small>
+                          <small className='text-muted'>Express, MongoDB, Mongoose, React, CSS</small>
                       </Card.Footer>
                 </Card>
               </div>
@@ -209,22 +221,38 @@ export default function Home () {
       <footer className={styles.footer}>
         <div className = 'github'>
           <GitHubIcon />
-            <p>nesbita</p>
+          <Link href='https://github.com/nesbita'>
+          <a target="_blank">
+            <br />
+            nesbita</a>
+        </Link>
         </div>
         
         <div className = 'linkedIn'>
           <LinkedInIcon />
-            <p>ariananesbit</p>
+          <Link href='https://www.linkedin.com/in/ariananesbit/'>
+          <a target="_blank">
+            <br />
+            ariananesbit</a>
+        </Link>
         </div>
 
         <div className = 'email'>
           <EmailIcon/>
-            <p>ariananesbit@gmail.com</p>
+          <Link href='mailto:ariananesbit@gmail.com'>
+          <a target="_blank">
+            <br />
+            ariananesbit@gmail.com</a>
+          </Link>  
         </div>
 
         <div className = 'resume'>
           <DescriptionIcon />
-            <p>Resume</p>
+          <Link href='./Resume2021.pdf'>
+          <a target="_blank">
+            <br />
+            Resume</a>
+          </Link> 
         </div>
       </footer>
         </div>
