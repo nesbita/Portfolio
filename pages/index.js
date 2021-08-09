@@ -41,7 +41,7 @@ export default function Home () {
           <main className={styles.main}>
             <h1>Hello</h1>
             <br />
-            <h2>I'm Ariana Nesbit</h2>
+            <h2>My name is Ariana Nesbit</h2>
             <br />
             <br />
             <br />
@@ -60,7 +60,7 @@ export default function Home () {
           <div id='About'>
             
           <div className={styles.aboutHeader}>
-            <h3>I'm a full stack engineer who wants to make a difference in the world through<br />
+            <h3>I am a full stack engineer who wants to make a difference in the world through<br />
                 thoughtful code and design.  I enjoy coding and working to be a better me each day. <br />  
                 In my free time, you can find me in the mountains, looking for animals to pet, or in my garden.</h3>
           </div>
@@ -148,7 +148,7 @@ export default function Home () {
                         <a target="_blank">Nature Walk</a>
                         </Link>
                         <br />
-                          A scenario-based game that monitors players' health based on their choices
+                          A scenario-based game that monitors the health of players based on their choices
                         <br/>
                         
                       </Card.Text>
