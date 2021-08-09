@@ -7,11 +7,9 @@ import GitHubIcon from '@material-ui/icons/GitHub'
 import LinkedInIcon from '@material-ui/icons/LinkedIn'
 import EmailIcon from '@material-ui/icons/Email'
 import DescriptionIcon from '@material-ui/icons/Description'
-import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown'
 import React from 'react'
 import Card from 'react-bootstrap/Card'
 import CardDeck from 'react-bootstrap/CardDeck'
-import project from './Project'
 import Navbar from "./Navbar"
 import Section from "./Section"
 
@@ -97,7 +95,7 @@ export default function Home () {
                 <br />
                 <br />
             </ul>
-   
+
             <ul className={styles.librariesFrameworks}>
               <p><strong>Libraries / Frameworks</strong></p>
                 <li>React</li>
@@ -109,6 +107,7 @@ export default function Home () {
                 <li>Bootstrap</li>
                 <li>Flask</li>
             </ul>
+           
             
             <ul className={styles.other}>
               <p><strong>Other</strong></p>
@@ -131,7 +130,6 @@ export default function Home () {
           <div className={styles.projectContainer} id='Projects'>
             <Section
               title='My Projects'
-              subtitle={project}
               dark={true}
               id="Project"
             />
