@@ -10,8 +10,8 @@ import DescriptionIcon from '@material-ui/icons/Description'
 import React from 'react'
 import Card from 'react-bootstrap/Card'
 import CardDeck from 'react-bootstrap/CardDeck'
-import Navbar from "./Navbar"
-import Section from "./Section"
+import Navbar from "./navbar"
+import Section from "./section"
 
 export default function Home () {
     return (
