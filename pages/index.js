@@ -10,8 +10,9 @@ import DescriptionIcon from '@material-ui/icons/Description'
 import React from 'react'
 import Card from 'react-bootstrap/Card'
 import CardDeck from 'react-bootstrap/CardDeck'
-import Navbar from "./navbar"
-import Section from "./section"
+import Navbar from './navbar'
+import Section from './section'
+import Background from './Background'
 
 export default function Home () {
     return (
@@ -21,14 +22,15 @@ export default function Home () {
             <Head>
               <title>Ariana Nesbit</title>
             </Head>
-            <Image
+            <Background />
+            {/* <Image
               className={styles.backgroundImage}
               src='/trees.jpg'
               alt='trees'
               layout='fill'
               objectFit='cover'
               objectPosition='center'
-            />
+            /> */}
 
           <div className={styles.links}>
             <Navbar />
