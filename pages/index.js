@@ -22,7 +22,8 @@ export default function Home () {
             <Head>
               <title>Ariana Nesbit</title>
             </Head>
-            <Background />
+            
+            <Background className={styles.backgroundImage}/>
             {/* <Image
               className={styles.backgroundImage}
               src='/trees.jpg'
