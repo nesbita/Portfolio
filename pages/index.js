@@ -22,7 +22,7 @@ export default function Home () {
               <title>Ariana Nesbit</title>
             </Head>
             
-          {/* <div className={styles.backgroundImage}> */}
+          <div className={styles.backgroundImage}> 
             <Image
               alt='trees'
               src='trees.jpg'
@@ -30,7 +30,7 @@ export default function Home () {
               objectFit='cover'
               quality={100}
             />
-          {/* </div> */}
+          </div>
 
           <div className={styles.links}>
             <Navbar />
