@@ -12,7 +12,7 @@ import Card from 'react-bootstrap/Card'
 import CardDeck from 'react-bootstrap/CardDeck'
 import Navbar from './navbar'
 import Section from './section'
-import Background from './background'
+// import Background from './background'
 
 export default function Home () {
     return (
@@ -23,7 +23,7 @@ export default function Home () {
               <title>Ariana Nesbit</title>
             </Head>
             
-            <Background className={styles.backgroundImage}/>
+            {/* <Background className={styles.backgroundImage}/> */}
             {/* <Image
               className={styles.backgroundImage}
               src='/trees.jpg'
