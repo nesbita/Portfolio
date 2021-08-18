@@ -41,7 +41,7 @@
 
   border-top: 2px solid #f73378; */
   /* background-color: #117373;  */
-  min-height: 100vh; 
+  /* min-height: 100vh;  */
   padding: 0 0.5rem; 
   display: flex;
   flex-direction: column;
@@ -51,15 +51,12 @@
   z-index: 0;
 }
 
-/* .backgroundImage {
-  background-image: url('../public/trees.jpg');
-  background-repeat:  no-repeat;
-  background-position: center;
-  margin: 0 auto;
+.backgroundImage {
+  position: fixed;
   height: 100vh;
-  width: 100%;
+  width: 100vw;
   z-index: -1;
-} */
+}
 
 .main {
   align-items: center;
