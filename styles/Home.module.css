@@ -30,9 +30,9 @@
 }
 
 .container {
-  background-image: url('../public/trees.jpg');
+  /* background-image: url('../public/trees.jpg');
   background-repeat: no-repeat;
-  width: 100%;
+  width: 100%; */
   /* background-attachment: fixed; */
   /* background-position: center; */
   /* background-size: cover; */

@@ -23,15 +23,15 @@ export default function Home () {
               <title>Ariana Nesbit</title>
             </Head>
             
-            {/* <Background className={styles.backgroundImage}/> */}
-            {/* <Image
-              className={styles.backgroundImage}
-              src='/trees.jpg'
+          <div className={styles.backgroundImage}>
+            <Image
               alt='trees'
+              src='/trees.jpg'
               layout='fill'
               objectFit='cover'
-              objectPosition='center'
-            /> */}
+              quality={100}
+            />
+          </div>
 
           <div className={styles.links}>
             <Navbar />
