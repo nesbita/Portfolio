@@ -25,7 +25,7 @@ export default function Home () {
           <div className={styles.backgroundImage}>
             <Image
               alt='trees'
-              src='/trees.jpg'
+              src='/public/trees.jpg'
               layout='fill'
               objectFit='cover'
               quality={100}
