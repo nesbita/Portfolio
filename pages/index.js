@@ -2,7 +2,8 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 import profilePic from '../public/profile.jpg'
-import trees from '../public/trees.jpg'
+import mountainPic from '../public/mountain.jpg'
+// import trees from '../public/trees.jpg'
 import styles from '../styles/Home.module.css'
 import GitHubIcon from '@material-ui/icons/GitHub'
 import LinkedInIcon from '@material-ui/icons/LinkedIn'
@@ -24,7 +25,7 @@ export default function Home () {
             </Head>
             
           <div>
-            <Image className={styles.backgroundImage} src={trees} alt='Tree Background' layout='fill' objectFit='cover' quality={100} />
+            <Image className={styles.backgroundImage} src={mountainPic} alt='Mountain Background' layout='fill' objectFit='cover' quality={100} />
           </div>
 
           <div className={styles.links}>
