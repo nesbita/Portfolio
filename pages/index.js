@@ -12,7 +12,6 @@ import Card from 'react-bootstrap/Card'
 import CardDeck from 'react-bootstrap/CardDeck'
 import Navbar from './navbar'
 import Section from './section'
-// import Background from './background'
 
 export default function Home () {
     return (
